@@ -26,3 +26,13 @@ if count > 10
 else
 puts "Hello #{user_name}"
 end
+puts "guss my number, it's between 1 to 9"
+number=gets.to_i
+random=Random.rand(1...9)
+if number==random
+  puts "YOU WIN!"
+elseif number-random==1 || number-random==-1
+  puts "So close!"
+else
+  puts "Try again latter"
+end
